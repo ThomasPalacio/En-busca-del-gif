@@ -1,0 +1,93 @@
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 40px;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-color: #b12a5b;
+}
+
+input {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 32, 158);
+    color: black;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.textTitles {
+    font-family: 'Sixtyfour', sans-serif;
+    font-style: oblique;
+}
+.subtitleHeader{
+  font-style: oblique;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    align-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 15px 10px 15px rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 0%; 
+    height: auto; /* Cambiado a 'auto' para que se ajuste automáticamente al contenido */
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    max-width: 400px; /* Añadido para evitar que el ancho exceda de 400px */
+    overflow: hidden;
+    width: 100%;
+}
+
+.card p {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 5px;
+    padding: 5px 20px 0px 20px;
+    text-align: center;
+}
+
+
+.card img {
+    width: 450px;
+    height: auto; /* Cambiado a 'auto' para que la altura se ajuste automáticamente al ancho */
+    max-width: 450px; /* Añadido para evitar que la imagen exceda su contenedor */
+}
+
+/* Consulta de medios para ajustar el tamaño de las tarjetas en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .card {
+      width: calc(100% - 40px); /* Se ajusta el ancho de la tarjeta para dejar espacio para el margen */
+  }
+}
